@@ -1,0 +1,4208 @@
+* {
+    margin: 0;
+    
+   
+}
+body
+{
+  overflow-x: hidden;
+}
+header {
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    justify-content: space-between;
+    padding: 28px;
+    transition: all .50s ease;
+}
+
+
+.header .menu .nava1
+{
+    position: relative;
+}
+
+
+#menu-bar
+{
+    display: none;
+}
+
+header label
+{
+    font-size: 20px;
+    color: #e6e6e6;
+    cursor: pointer;
+    display: none;
+}
+
+
+.icons {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 10px;
+
+}
+
+.icons i {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 25px 15px;
+    max-width: 0px 10px;
+    transition: all .50s ease;
+
+
+}
+
+
+.icons i:hover {
+
+    transform: scaleX(-1);
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    right: 52px;
+
+}
+
+.navbar li.nava1 {
+    display: block;
+  
+  
+}
+
+
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li i {
+    font-size: 12px;
+
+}
+
+.navbar li:hover i {
+    transform: scaleY(-1);
+}
+
+.navbar li:hover {
+    background-color: #eb5c6f;
+    border-radius: 20px;
+
+
+}
+
+.nav1 {
+    display: none;
+}
+
+.border {
+    border-top: 1px solid rgb(98, 98, 98);
+
+    width:200px;
+}
+
+.navbar a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 25px 25px;
+    max-width: 0px 10px;
+    transition: all .50s ease;
+
+}
+
+
+.navbar li:hover .nav1 {
+    display: block;
+    display: flex;
+    position: absolute;
+    background-color: #fff;
+    margin-top: 15px;
+
+
+
+}
+
+.navbar li:hover .nav1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.navbar li:hover .nav1 a {
+    color: rgb(98, 98, 98);
+    display: block;
+    margin-bottom: -40px;
+
+
+}
+
+.navbar li:hover .nav1 img {
+    position: relative;
+    width: 260%;
+    right: 470px;
+    height: 150px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+
+}
+
+.nav3 {
+    display: none;
+}
+
+.navbar li:hover .nav1 a:hover {
+    color: black;
+
+
+}
+
+.navbar li:hover .nav1 a.title4 {
+    position: relative;
+    bottom: 20px;
+    color: black;
+
+
+}
+
+.nav1.picture {
+    display: block;
+    position: relative;
+    top: 300%;
+}
+
+.navbar li:hover .nav3 {
+    display: block;
+    display: flex;
+    position: absolute;
+    background-color: #fff;
+    margin-top: 15px;
+
+
+}
+
+.navbar li:hover .nav3 ul {
+    display: block;
+    margin: 30px;
+}
+
+.navbar li:hover .nav3 a {
+    color: rgb(98, 98, 98);
+    display: flex;
+    margin-bottom: -40px;
+
+
+}
+
+.navbar li:hover .nav3 a:hover {
+    color: black;
+
+
+}
+
+.navbar li:hover .nav3 a.title4 {
+    position: relative;
+    bottom: 20px;
+    color: black;
+
+
+}
+
+.nav4 {
+    display: none;
+
+}
+
+.navbar li:hover .nav4 {
+    display: block;
+
+    position: absolute;
+    background-color: #fff;
+    margin-top: 15px;
+    padding: 20px;
+
+}
+
+.fa-angle-right {
+    float: right;
+    position: relative;
+    top: 5px;
+    left: 85px;
+}
+
+.navbar ul li:hover .nav4 ul {
+    display: block;
+    margin: 1000px;
+    background-color: transparent;
+}
+
+.navbar li:hover .nav4 a {
+    color: rgb(98, 98, 98);
+    display: block;
+    margin-bottom: -40px;
+    margin-right: 50px;
+    position: relative;
+    right: 10px;
+    bottom: 20px;
+
+
+
+
+}
+
+.navbar li:hover .nav4 a:hover {
+    color: black;
+    background-color: transparent;
+
+}
+
+.navbar li:hover .nav4 li:hover {
+    color: black;
+    background-color: transparent;
+
+
+}
+
+.nav5 {
+    display: none;
+}
+
+.hover-me:hover .nav5 {
+    position: relative;
+    display: block;
+    position: absolute;
+    left: -200px;
+
+    bottom: 1px;
+    margin: 0;
+    background-color: #fff;
+
+
+}
+
+
+
+.logo {
+    padding: 50px;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: -10%;
+    }
+
+    to {
+
+        margin-right: 100%;
+    }
+}
+
+.slideshow-container {
+
+
+    /* Slaytları yatayda hizalamak için display özelliğini inline-block olarak ayarlıyoruz. */
+    max-width: 100%;
+
+
+
+    margin: auto;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+.mySlides {
+    display: none;
+}
+
+
+
+.header:hover {
+    background-color: #fb667a;
+    /* Hover durumunda arka plan rengini değiştiriyoruz */
+    color: white;
+    /* Metin rengini beyaz yapıyoruz */
+}
+
+.image5 {
+
+    height: 100vh;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    /* prev ile nextn yerlerini ayarlıyor*/
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: aliceblue;
+    justify-content: center;
+    background-color: transparent;
+    text-align: center;
+    padding-bottom: 5px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.prev {
+    display: none;
+}
+
+.next {
+    display: none;
+}
+
+.slideshow-container:hover .prev {
+    display: block;
+}
+
+.slideshow-container:hover .next {
+    display: block;
+}
+
+.next {
+    margin-left: 1100px;
+    animation-duration: 1s;
+    animation-name: slidein1;
+}
+
+@keyframes slidein1 {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+
+        margin-right: 100%;
+    }
+}
+
+.prev {
+    left: 100px;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+.next:hover {
+    background-color: #fb667a;
+}
+
+.prev:hover {
+    background-color: #fb667a;
+}
+
+.text {
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+    padding-left: 200px;
+    bottom: 370px;
+    font-weight: 100;
+    font-weight: bold;
+    letter-spacing: 4px;
+    /* yazılarda ki tüm harfleri büyütür*/
+    animation-duration: 0.5s;
+    animation-name: slidein;
+
+
+
+
+}
+
+
+.text1 {
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    
+    padding-left: 200px;
+    letter-spacing: -2px;
+    bottom: 280px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    animation-duration: 1s;
+    animation-name: slidein;
+    font-weight: lighter;
+
+
+}
+
+.buttons {
+    position: absolute;
+
+    bottom: 190px;
+    text-transform: uppercase;
+}
+
+.button1 {
+    font-size: 12px;
+    background-color: #fb667a;
+    color: white;
+    text-align: center;
+    margin-left: 200px;
+    width: 65%;
+    height: 8vh;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    border-radius: 6px;
+    animation-duration: 1.5s;
+    position: relative;
+    top: 35px;
+    animation-name: slidein;
+}
+
+.btn {
+   
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    position: relative;
+    left: 200px;
+    top: 45px;
+    width: 30%;
+    height: 8vh;
+    overflow: hidden;
+    border: none;
+    text-transform: uppercase;
+    animation-duration: 0.3s;
+    animation-name: slidein;
+    border-radius: 32px;
+     transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 999;
+}
+
+
+
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fb667a;
+    color: white;
+    transition: left 0.5s;
+    z-index: -1;
+
+}
+
+.btn:hover::before {
+  left: 0;
+}
+
+.btn:hover
+{
+    color: #f5f5f5;
+}
+
+.text2 {
+
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    padding-left: 200px;
+    bottom: 370px;
+    font-weight: 100;
+    font-weight: bold;
+    letter-spacing: 4px;
+    /* yazılarda ki tüm harfleri büyütür*/
+    animation-duration: 0.5s;
+    animation-name: slidein;
+
+
+
+
+
+}
+
+.text3 {
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+   
+    padding-left: 200px;
+    letter-spacing: -2px;
+    bottom: 280px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    animation-duration: 1s;
+    animation-name: slidein;
+    font-weight: lighter;
+
+}
+
+.light-text1 {
+    font-weight: bold;
+}
+
+.light-text {
+    font-weight: lighter;
+}
+
+.buttons1 {
+
+    position: absolute;
+
+    bottom: 190px;
+    text-transform: uppercase;
+
+}
+
+.button3 {
+    font-size: 12px;
+    background-color: #fb667a;
+    color: white;
+    text-align: center;
+    margin-left: 200px;
+    width: 65%;
+    height: 8vh;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    border-radius: 6px;
+    animation-duration: 1.5s;
+    position: relative;
+    top: 35px;
+    animation-name: slidein;
+}
+
+.button4 {
+    font-size: 12px;
+    background-color: #fb667a;
+    color: white;
+    text-align: center;
+    margin-left: 200px;
+    width: 65%;
+    height: 8vh;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    border-radius: 6px;
+    animation-duration: 1.5s;
+    position: relative;
+    top: 15px;
+    animation-name: slidein;
+}
+
+
+.button4:hover {
+    background-color: white;
+    color: black;
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+}
+
+/**/
+
+.container {
+    display: flex;
+    gap: 10px;
+    /* Kutular arasındaki boşluğu ayarlamak için bir değer verin */
+    align-items: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 120px;
+}
+
+.box {
+
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease;
+
+}
+
+.image-container {
+    flex: 0 0 calc(33.33% - 20px);
+    padding-right: 100px;
+    width: 400px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+    background-color: #fb667a;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.image-container1.img {
+
+    position: relative;
+    bottom: 100px;
+    z-index: 1;
+}
+
+.image1 {
+    position: relative;
+    bottom: 100px;
+}
+
+.image-container1.img {
+
+    width: 300px;
+    margin-right: 300px;
+
+}
+
+.image-container:last-child {
+    margin-right: 0;
+}
+
+.image1 {
+    width: 200px;
+    height: 200px;
+}
+
+.dot1:hover {
+    color: #fc4c29;
+}
+
+
+.dots1 {
+    position: absolute;
+    margin-top: 25px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dot1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot1.active {
+    background-color: #fc4c29;
+}
+
+.header.scrolled {
+    background-color: #fb667a;
+}
+
+.yazi {
+    align-items: center;
+    justify-content: center;
+    display: block;
+    text-align: center;
+    margin-top: -150px;
+    margin-bottom: 200px;
+}
+
+.yazi1 {
+
+    font-size: 30px;
+}
+
+.icon10 img {
+    width: 50px;
+}
+
+.main {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+   
+
+}
+
+.main1 {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 80px;
+}
+
+.main3 {
+
+    flex: 0 0 10%; /* Her öğeyi yatayda eşit genişlikte yerleştirmek için */
+      padding: 30px;
+      box-sizing: border-box;
+     margin-bottom: 100px;
+      margin-top: 50px;
+}
+
+
+
+.main4 {
+    width: 340px;
+    height: 550px;
+    background-color: #fb667a;
+    border-radius: 20px;
+    margin-left: 5px;
+
+
+}
+
+.main4 img {
+    position: absolute;
+    bottom: 590px;
+    left: 110px;
+    width: 15%;
+
+
+}
+
+.main5 {
+    width: 340px;
+    height: 550px;
+    background-color: #9ecbdd;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+
+.bolder {
+    font-weight: 900;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.text17 i {
+    position: absolute;
+    left: 260px;
+    top: 10px;
+    font-size: 20px;
+}
+
+.text17 {
+    position: relative;
+    top: 30px;
+    font-size: 25px;
+}
+
+.text16 {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    line-height: 45px;
+    position: relative;
+    top: 110px;
+}
+
+.text16 p:hover {
+    text-decoration: underline;
+    cursor: default;
+
+}
+
+.text16 .bolder:hover {
+    text-decoration: none;
+
+}
+
+.text16 h4 {
+    font-size: 30px;
+}
+
+.border2 {
+    border-top: 2px solid rgb(255, 255, 255);
+    width: 200px;
+    position: relative;
+    left: 80px;
+    top: 20px;
+}
+
+.main5 img {
+    position: absolute;
+    bottom: 570px;
+    left: 515px;
+    width: 15%;
+}
+
+.main6 {
+    width: 340px;
+    height: 550px;
+    background-color: #99d3ab;
+
+    border-radius: 20px;
+    margin-left: 5px;
+}
+
+.main6 img {
+    position: absolute;
+    bottom: 570px;
+    left: 920px;
+    width: 15%;
+}
+
+.main7 {
+    width: 340px;
+    height: 550px;
+    border-radius: 20px;
+    background-color: #fb667a;
+    margin-left: 5px;
+    z-index: -1;
+}
+
+.main7 img {
+    position: absolute;
+    bottom: 570px;
+    left: 1330px;
+    width: 15%;
+}
+
+.slider-buttonx {
+
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 1.5);
+    color: black;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 40%;
+    cursor: pointer;
+}
+
+.slider-buttonx {
+    position: absolute;
+
+    /* Dikey düzlemde döndürme */
+
+
+
+    width: 50px;
+    height: 50px;
+    background-color: #f5f5f5;
+    color: black;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 40%;
+
+    margin-top: -100px;
+    cursor: pointer;
+    align-items: center;
+
+}
+
+.leftb {
+    position: relative;
+    top: 10px;
+}
+
+.slider-buttonx1:hover {
+    background-color: #fb667a;
+    color: aliceblue;
+    /* rotate ikonları döndürmeye yarıyo*/
+
+}
+
+.slider-buttonx1:active {
+    background-color: #fb667a;
+    color: aliceblue;
+}
+
+.slider-buttonx1.left {
+    position: absolute;
+    left: 45%;
+    
+}
+
+.slider-buttonx1.right {
+ 
+  
+    left: 55%;
+
+}
+.slider-buttonx1 {
+
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 1.5);
+    color: black;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 40%;
+    cursor: pointer;
+}
+
+.slider-buttonx1 {
+    position: absolute;
+
+    /* Dikey düzlemde döndürme */
+
+
+
+    width: 50px;
+    height: 50px;
+    background-color: #f5f5f5;
+    color: black;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 40%;
+
+    margin-top: -100px;
+    cursor: pointer;
+    align-items: center;
+
+}
+
+.leftb {
+    position: relative;
+    top: 10px;
+}
+
+.slider-buttonx:hover {
+    background-color: #fb667a;
+    color: aliceblue;
+    /* rotate ikonları döndürmeye yarıyo*/
+
+}
+
+.slider-buttonx:active {
+    background-color: #fb667a;
+    color: aliceblue;
+}
+.navbar3 img
+{
+   margin-top: 100px; 
+}
+
+.slider-buttonx.left {
+    position: absolute;
+    left: 45%;
+    
+}
+
+.slider-buttonx.right {
+ 
+  
+    left: 55%;
+
+}
+.dot2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot2.active {
+    background-color: #fc4c29;
+}
+
+.web-design {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 80%;
+    left: 11%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.web-design::after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 3px;
+    font-weight: bold;
+    background-color: #fc4c29;
+    margin-top: 15px;
+
+}
+
+
+
+.web-design1 {
+    position: absolute;
+    bottom: 43px;
+    left: 100px;
+    color: #fff;
+    font-size: 15px;
+
+}
+
+.fresh.shop {
+    
+    display: flex;
+
+
+
+}
+
+.fresh {
+    display: flex;
+    position: relative;
+    margin-top: 100px;
+
+}
+
+.fresh1.img {
+    width: 60%;
+    height: auto;
+}
+
+.fresh-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 20px;
+    right: 30px;
+}
+
+@keyframes slideUpDown {
+    0% {
+        transform: translateX(-10px);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(10px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-10px);
+        opacity: 1;
+    }
+}
+
+.fresh-shop {
+    width: 100%;
+    display: inline-flex;
+    margin-top: 100px;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fresh {
+    display: flex;
+    position: relative;
+}
+
+.fresh1 img {
+    width: 100%;
+    height: auto;
+}
+
+.fresh2 img {
+    width: 100%;
+    height: auto;
+}
+
+.fresh-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    animation-name: slideUpDown;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-color: transparent;
+}
+
+@keyframes slideUpDown {
+    0% {
+        transform: translateX(-10px);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(10px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-10px);
+        opacity: 1;
+    }
+}
+
+.service1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    height: auto;
+
+    position: relative;
+    top: 100px;
+    right: 130px;
+}
+
+.service2 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.services2 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.point {
+    font-size: 60px;
+    letter-spacing: 20px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.service3 {
+    color: #fb667a;
+    font-size: 15px;
+}
+
+.service6 {
+    width: 100%;
+    font-size: 16px;
+    color: black;
+    font-weight: 200;
+    padding-top: 20px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.btn1 {
+   
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    position: relative;
+    top: 10px;
+   
+   
+    width: 30%;
+    height: 8vh;
+    overflow: hidden;
+    border: none;
+    text-transform: uppercase;
+    animation-duration: 0.3s;
+    animation-name: slidein;
+    border-radius: 32px;
+     transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 999;
+}
+
+
+
+
+.btn1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fb667a;
+    color: white;
+    transition: left 0.5s;
+    z-index: -1;
+
+}
+
+.btn1:hover::before {
+  left: 0;
+}
+
+.btn1:hover
+{
+    color: #f5f5f5;
+}
+
+.service7 {
+    display: flex;
+    overflow: hidden;
+}
+
+.dalga2 {
+    width: 50%;
+    display: flex;
+    z-index: 1;
+    position: relative;
+    bottom: 100px;
+
+}
+
+.dalga1 img {
+    width: 100%;
+    height: 100px;
+}
+
+.dalga1 {
+    width: 100%;
+
+}
+
+.dalga {
+    width: 100%;
+
+}
+
+.dalga3 {
+    transform: scale(-1, 1);
+    /* X ekseni üzerinde ayna çevirme */
+    filter: FlipH;
+    position: relative;
+    left: 100%;
+    bottom: 104px;
+}
+
+.boxing1 {
+    display: flex;
+}
+
+.logo1 {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.image1 {
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+}
+
+.image1 img {
+    width: 100%;
+    height: auto;
+}
+
+.image1 p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 120px;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background-color: #fb667a;
+}
+
+.image-container1 {
+    padding: 10px;
+    /* Eğer içeriğiniz varsa boşluk bırakın */
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Styling for your dots */
+.dots1 {
+    position: absolute;
+    margin-top: 25px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dot1,
+.dot2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot1.active,
+.dot2.active {
+    background-color: #ff9fac;
+}
+
+.pink {
+    background-color: #ff9fac;
+    width: 100%;
+   height: 260vh;
+    margin-top: 100px;
+    overflow: hidden;
+
+}
+
+.pink .product-slider
+{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.main-wrapper .product-slider
+{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.text4 {
+    max-width:100%;
+    margin: 0 auto;
+    padding-left: 0 1rem;
+}
+
+.btn3 {
+    background-color: transparent;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn3:hover {
+    background-color: #fb667a;
+    color: white;
+}
+
+.buttons2 {
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.image_texture {
+    display: flex;
+
+
+
+}
+.slider-prev1,
+.slider-next1 {
+
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 1.5);
+    color: black;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 40%;
+   margin-left: 25%;
+border: none;
+
+    cursor: pointer;
+
+}
+.slider-next1
+{
+    margin-top: 60px;
+    transform: scaleX(-1);
+}
+.slider-prev1
+{
+    margin-top: 20px;
+    position: relative;
+    left: 270px;
+}
+
+.slider-prev1:hover
+{
+    background-color: #eb5c6f;
+    color: white;
+}
+.slider-next1:hover
+{
+    background-color: #eb5c6f; 
+    color: white;
+}
+
+.image_text {
+    width: 700px;
+    height: 600px;
+    background-color: rgb(247, 247, 247);
+    margin-left: 20px;
+    border-radius: 20px;
+
+}
+
+.buttons3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    justify-content: center;
+}
+
+.button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid transparent;
+    transition: opacity 0.3s ease-in;
+    border-radius: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 999;
+    overflow: hidden;
+    border: none;
+    }
+
+#button1
+{
+    bottom: 80%;
+    left: 54%;
+}
+
+
+
+#button1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fb667a;
+    color: white;
+    transition: left 1s;
+    z-index: -1;
+
+}
+#button1:hover i
+{
+    transform: 3s;
+}
+
+#button1:hover::before {
+  left: 0;
+}
+
+#button1:hover
+{
+    transition:  0.5s;
+    color: #f5f5f5;
+}
+
+
+#button2
+{
+    bottom: 80%;
+    left: 54%;
+}
+
+
+
+#button2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fb667a;
+    color: white;
+    transition: left 1s;
+    z-index: -1;
+
+}
+
+#button2:hover::before {
+  left: 0;
+}
+
+#button2:hover
+{
+    transition:  0.5s;
+    color: #f5f5f5;
+}
+
+#button3 {
+    background-color: rgba(250, 245, 240, 1);
+    bottom: 80%;
+    left: 54%;
+    /* Orta konum */
+    opacity: 0;
+}
+
+
+#button3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fb667a;
+    color: white;
+    transition: left 1s;
+    z-index: -1;
+
+}
+
+#button3:hover::before {
+  left: 0;
+}
+
+#button3:hover
+{
+    transition:  0.5s;
+    color: #f5f5f5;
+}
+
+.buttons3:hover #button3 {
+    opacity: 1;
+    left: 40%;
+
+}
+
+
+
+
+.buttons3:hover #button1 {
+    left: 67%;
+}
+
+.image img {
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn3.dot1.active {
+    background-color: #fb667a;
+    color: white;
+}
+
+.flex-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.image7 img {
+    width: 160px;
+    position: absolute;
+    top: -1400px;
+ z-index: 1;
+}
+
+.image7 {
+    position: absolute;
+    width: 50px;
+    height: auto;
+
+    animation-name: aimation1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-color: transparent;
+}
+
+@keyframes aimation1 {
+    0% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(10px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+}
+
+.image8 img {
+    width: 180px;
+    position: relative;
+    top: -1400px;
+    left: 1000px;
+}
+
+.image8 {
+    position: absolute;
+    width: 50px;
+    height: auto;
+
+    animation-name: aimation2;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-color: transparent;
+}
+
+@keyframes aimation2 {
+    0% {
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+}
+
+.image9 img {
+    width: 200px;
+    position: absolute;
+    top: -110px;
+    z-index: 999;
+
+}
+
+.image9 {
+    position: absolute;
+    width: 50px;
+    height: auto;
+
+    animation-name: aimation3;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-color: transparent;
+}
+
+@keyframes aimation3 {
+    0% {
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+}
+
+.image10 img {
+    width: 250px;
+    position: relative;
+    bottom: 200px;
+    left: 900px;
+}
+
+.image10 {
+    position: relative;
+    width: 50px;
+    height: auto;
+
+    animation-name: aimation3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-color: transparent;
+}
+
+@keyframes aimation3 {
+    0% {
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+}
+
+
+
+
+.flex-box {
+    width: 360px;
+    height: 250px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-around;
+}
+
+.dalga7 {
+    width: 50%;
+    display: flex;
+    z-index: 0;
+    position: relative;
+    top: 465px;
+
+}
+
+.dalga6 img {
+    width: 100%;
+    height: 150px;
+}
+
+.dalga6 {
+    width: 100%;
+
+}
+
+.dalga5 {
+    width: 100%;
+
+}
+
+.dalga4 {
+    transform: scale(-1, 1);
+    /* X ekseni üzerinde ayna çevirme */
+    filter: FlipH;
+    position: relative;
+    left: 100%;
+    bottom: 154px;
+
+}
+
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+
+}
+
+.wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: calc((100%/3)-12px);
+    gap: 20px;
+    overflow: hidden;
+}
+
+.carousel .card {
+    height: 340px;
+    list-style: none;
+    background: #bbb;
+    border-radius: 20px;
+
+}
+
+.carousel .img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.deneme5 {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.deneme3 {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.deneme4 {
+    flex: 0 0 10%; /* Her öğeyi yatayda eşit genişlikte yerleştirmek için */
+    padding: 2px;
+    box-sizing: border-box;
+   margin-bottom: 100px;
+    margin-top: 50px;
+
+}
+
+
+
+.demo2 {
+    position: relative;
+    font-size: 15px;
+}
+
+.texture1 {
+    width: 350px;
+    height: 150px;
+    display: block;
+    margin-left: 20px;
+    text-align: center;
+    color: black;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 15px;
+    /* İçerik etrafına boşluk eklemek için */
+    box-sizing: border-box;
+    border-radius: 20px;
+
+}
+
+.texture1 img {
+    padding-top: 10px;
+  
+    border-radius: 12px;
+
+}
+
+.march {
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    position: relative;
+    border-radius: 50%;
+    top: -40px;
+    left: 40%;
+}
+
+.march1 p {
+    position: absolute;
+    top: 13px;
+    left: 16px;
+    color: #191919;
+
+}
+
+.march1 {
+    width: 60px;
+    height: 60px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.title5 {
+    letter-spacing: 2px;
+    padding-bottom: 30px
+}
+
+.text9 {
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #555;
+    font-weight: 100;
+}
+
+.text10 {
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #555;
+    position: relative;
+    left: 100px;
+    padding-top: 20px;
+}
+.text10 i
+{
+    transform: scale(-1);
+}
+
+.deneme6 {
+    padding-left: 10px;
+}
+
+.deneme4:hover .texture1 {
+    color: #fb667a;
+}
+
+.texture1 {
+    position: relative;
+    width: 370px;
+    height: 550px;
+    display: block;
+    overflow: hidden;
+}
+
+.texture1 img {
+    width:100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40, 40, 40, 0.8);
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.texture1:hover .overlay {
+    opacity: 1;
+}
+
+.texture1:hover .overlay.image11 {
+    opacity: 1;
+}
+
+.icon_1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 40%;
+}
+
+.number4 {
+
+    display: block;
+    margin-right: 5px;
+    width: 52px;
+    height: 52px;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.number4:hover {
+    z-index: 0;
+    background-color: #fb667a;
+    border: #f5f5f5;
+
+}
+
+.two {
+    flex: 1;
+    display: flex;
+    margin: 20px;
+    margin-top: 120px;
+    overflow: hidden;
+}
+
+.two-one {
+    padding-left: 40px;
+}
+
+.two-two {
+    padding-left: 20px;
+}
+
+.two-one img {
+    width: 550px;
+    border-radius: 20px;
+}
+
+.two-two img {
+    width: 550px;
+    border-radius: 20px;
+}
+
+.sale {
+    position: relative;
+    bottom: 200px;
+    left: 30px;
+}
+
+.sale p {
+    font-size: 40px;
+    color: white;
+}
+
+.btn6 {
+   
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    position: relative;
+  
+    width: 30%;
+    height: 8vh;
+    overflow: hidden;
+    border: none;
+    text-transform: uppercase;
+    animation-duration: 0.3s;
+    animation-name: slidein;
+    border-radius: 32px;
+     transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 999;
+}
+
+
+
+
+.btn6::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fb667a;
+    color: white;
+    transition: left 0.5s;
+    z-index: -1;
+
+}
+
+.btn6:hover::before {
+  left: 0;
+}
+
+.btn6:hover
+{
+    transition:  0.5s;
+    color: #f5f5f5;
+}
+
+.sale1 {
+    display: block;
+    position: relative;
+    bottom: 200px;
+    left: 30px;
+}
+
+.sale1 p {
+    justify-content: end;
+    font-size: 44px;
+    color: white;
+    text-align: center;
+    position: relative;
+    right: 180px;
+}
+
+.sale1.btn6 {
+    flex: 1;
+}
+
+.slider-container4 {
+    width: 95%;
+    
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+.slide-container4 img
+{
+
+max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+  .color4 {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: relative;
+  right: 260px;
+  top: 190px;
+  
+}
+.icon3 {
+  color: #999;
+  font-size: 30px;
+  position: absolute;
+  margin-top: -210px;
+  left: 405px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #999;
+
+}
+
+.icon3 i {
+  position: relative;
+  left: 20px;
+  top: 18px;
+  transform: scaleX(-1);
+}
+
+.text12 {
+  position: relative;
+  left: -100px;
+  top: 110px;
+  line-height: 100px;
+  font-size: 20px;
+
+}
+
+.text12 h4 {
+ line-height: 1px;
+}
+
+.text13 {
+  width: 550px;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: justify;
+  color: #555;
+  position: relative;
+  font-style: italic;
+  left: 200px;
+  bottom: 210px;
+}
+
+.border1 {
+  border-left: 2px solid #999;
+  height: 200px;
+  position: relative;
+  bottom: 60px;
+  left: 140px;
+
+}
+  .slider4 {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    
+  }
+
+  .slide-container4 {
+    flex: 0 0 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    
+  }
+
+  .slide4 {
+    width: 100%;
+    height: 50%;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 20px;
+  }
+
+  .dots4 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -320px;
+    margin-bottom: -100px;
+  }
+
+  .dot3 {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .dot3:hover
+  {
+    background-color: rgb(227, 188, 175);
+  }
+
+  .dot3.active {
+    background-color: #fb667a;
+  }
+
+.demo1 {
+    display: flex;
+    position: relative;
+    margin-top: 90px;
+    margin-left: 70px;
+    overflow: hidden;
+    margin-bottom: 140px;
+}
+
+.icon4 {
+    background-color: #ecb866;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    position: relative;
+    left: 8px;
+    top: 8px;
+
+}
+
+.image6 img {
+    width: 400px;
+    transform: scale(1);
+    transition: transform 1.8s ease-in-out;
+}
+
+.image6 img:hover {
+    transform:  scale(1.1);
+}
+
+.title6 {
+    display: block;
+    font-size: 20px;
+    line-height: 50px;
+
+}
+
+.text14 {
+    display: block;
+    font-size: 15px;
+    width: 70%;
+    color: #555;
+    letter-spacing: 1px;
+}
+
+
+.demo3 {
+    display: flex;
+}
+
+.display1 {
+    display: block;
+    margin-left: 20px;
+}
+
+.icon4 i {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: #f5f5f5;
+    font-size: 40px;
+
+}
+
+.demo3:hover .icon4 i {
+    transform: scaleX(-1);
+
+}
+
+.demo3:hover .icon4 {
+    transform: scale(1.1);
+}
+
+.demo3:hover .title6 {
+    color: #fb667a;
+}
+
+
+.icon5 {
+    background-color: transparent;
+    border: 1.6px dashed #ecb866;
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+.icon7 {
+    background-color: #678896;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    position: relative;
+    left: 8px;
+    top: 8px;
+
+}
+
+.icon7 i {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: #f5f5f5;
+    font-size: 40px;
+
+}
+
+.icon6 {
+    background-color: transparent;
+    border: 1.6px dashed #678896;
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+.demo3:hover .icon7 i {
+    transform: scaleX(-1);
+
+}
+
+.demo3:hover .icon7 {
+    transform: scale(1.1);
+}
+
+.icon9 {
+    background-color: #fb667a;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    position: relative;
+    left: 7px;
+    top: 8px;
+
+}
+
+.icon9 i {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: #f5f5f5;
+    font-size: 40px;
+
+}
+
+.icon8 {
+    background-color: transparent;
+    border: 1.6px dashed #fb667a;
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+.demo3:hover .icon9 i {
+    transform: scaleX(-1);
+
+}
+
+.demo3:hover .icon9 {
+    transform: scale(1.1);
+}
+
+.text15 {
+    text-align: end;
+    display: block;
+    font-size: 15px;
+    width: 70%;
+    color: #555;
+    letter-spacing: 1px;
+}
+
+.demo4 {
+    margin-right: 100px;
+}
+
+.title7 {
+    text-align: end;
+    display: block;
+    font-size: 20px;
+    line-height: 50px;
+    padding-right: 20px;
+}
+
+.demo3:hover .title7 {
+    color: #fb667a;
+}
+
+
+
+
+.number12 {
+    padding: 15px 15px;
+    color: white;
+    border: #fb667a;
+}
+
+.number12:hover {
+    color: #fff;
+}
+
+
+/* Ana Bölüm Stilleri */
+.main-wrapper {
+    min-height: 150vh;
+    padding: 3rem 1rem;
+    background-color: #99d3ab;
+    overflow: hidden;
+}
+.image12 img {
+    width: 160px;
+    position: absolute;
+    top: -800px;
+ z-index: 1;
+}
+
+.image12 {
+    position: absolute;
+    width: 50px;
+    height: auto;
+
+    animation-name: aimation1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-color: transparent;
+}
+
+@keyframes aimation1 {
+    0% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(10px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+}
+.image13 img {
+    width: 180px;
+    position: absolute;
+    top: -700px;
+    left: 1000px;
+    
+
+    
+}
+
+.image13 {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    animation-name: aimation2;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-color: transparent;
+}
+
+@keyframes aimation2 {
+    0% {
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+}
+.image14 img {
+    width: 200px;
+    position: absolute;
+    top: -110px;
+    z-index: 999;
+
+}
+
+.image14 {
+    position: absolute;
+    width: 50px;
+    height: auto;
+
+    animation-name: aimation3;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-color: transparent;
+}
+
+@keyframes aimation3 {
+    0% {
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+}
+.container2 {
+    max-width:100%;
+    margin: 0 auto;
+    padding-left: 0 1rem;
+    
+}
+
+/* Başlık Stilleri */
+.title8 {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.title8 h3 {
+    opacity: 0.7;
+    color: white;
+    font-size: 35px;
+}
+.title8 img
+{
+    width: 60px;
+}
+
+
+/* Slider Stilleri */
+.product-slider {
+    position: relative;
+    overflow: hidden;
+    margin-top: 1rem;
+   
+}
+.product-slider1 {
+    position: relative;
+    overflow: hidden;
+    margin-top: 1rem;
+   
+}
+
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 1px;
+   
+    
+}
+.slider-container1 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 1px;
+   
+    
+}
+.product.product-slide
+{
+    width: 265px;
+}
+
+.product-slide {
+    flex: 0 0 20%;
+    padding: 0 10px;
+    text-align: center;
+}
+.product.product-slide1
+{
+    width: 265px;
+}
+
+.product-slide1 {
+    flex: 0 0 20%;
+    padding: 0 10px;
+    text-align: center;
+}
+.slider-prev,
+.slider-next {
+
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 1.5);
+    color: black;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 40%;
+   margin-left: 25%;
+border: none;
+
+    cursor: pointer;
+
+}
+.slider-next
+{
+    margin-top: 60px;
+    transform: scaleX(-1);
+}
+.slider-prev
+{
+    margin-top: 20px;
+    position: relative;
+    left: 270px;
+}
+
+.leftb {
+    position: relative;
+    bottom: 20px;
+}
+
+.slider-prev:hover {
+    background-color: #fb667a;
+    color: aliceblue;
+    /* rotate ikonları döndürmeye yarıyo*/
+
+}
+.slider-next:hover
+{
+    background-color: #fb667a;
+    color: aliceblue;
+}
+
+
+
+/* Ürün Stilleri */
+.product {
+    margin-bottom: 100px;
+    width: 300px;
+    height: 500px;
+    background-color: #e6e6e6;
+    border-radius: 0.6rem;
+   
+    box-shadow: 0 3px 3px -1px rgba(171, 171, 171, 1);
+    transition: box-shadow 0.4s ease-out;
+    position: relative;
+    margin: 10px;
+}
+
+.product:hover {
+    box-shadow: 0 10px 12px -7px rgba(171, 171, 171, 1);
+}
+
+.product-img img {
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+.rear-img
+{
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 0;
+   
+}
+.menu-toggle {
+    display: none; /* Başlangıçta gizli */
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin-top: 40px;
+  }
+  
+.product-img .rear-img {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+  
+}
+
+.product:hover .rear-img {
+    opacity: 1;
+    z-index: 0;
+}
+
+/* Ürün Bilgi Stilleri */
+.product-info {
+    padding: 1.2rem 1.2rem 2rem;
+    text-align: center;
+}
+
+.product-info div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.stars i
+{
+position: relative;
+right: 200px;
+top: 120px;
+color: goldenrod;
+}
+
+.product-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.product-price {
+    color: #555;
+    position: relative;
+    display: flex;
+    right: 100px;
+    top: 100px;
+}
+
+.product-btn {
+    background-color: hsl(37, 78%, 66%);
+    color: #f7f7f7;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 0.5rem 1.8rem;
+    border-radius: 1.2rem;
+    transition: background-color 0.5s ease-out;
+}
+
+.product-btn:hover {
+    background-color: #99d3ab;
+}
+.buttonlar .buttons3
+{
+position: relative;
+top: -120px;
+right:150px;
+
+}
+.buttons3 .stars p
+{
+   position: relative;
+   top: 150px; 
+   width: 200px;
+   left: 10px;
+}
+.buttons3 .stars i
+{
+    position: relative;
+    right: 140px;
+    
+}
+.buttons3 .stars .pr
+{
+
+color: #fb667a;
+font-weight: bold;
+position: relative;
+top: 200px;
+left: 180px;
+
+
+}
+.buttons3 .stars .pr .product-price4
+{
+    padding-right: 20px;
+    
+}
+.buttons3 .stars .pr .product-price1
+{
+    padding-right: 20px;
+    color: #555;
+   
+    font-size: 15px;
+    
+}
+.buttons3 .stars .pr .product-price3
+{
+    padding-right: 20px;
+    color: #555;
+    font-size: 13px;
+    text-decoration: line-through;
+    text-decoration-color: #555;
+    
+}
+.buttons3 .stars .product-price .black
+{
+
+color: black;
+font-weight: bold;
+
+}
+.navbar3 {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 400px; /* Slayt yüksekliğini ayarlayın */
+  }
+  
+  .slides-container {
+    display: flex;
+    width: 400%; /* Toplam slayt sayısı * 100% */
+    transition: transform 1s ease-in-out;
+  }
+  
+  .navbar3 .slide {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.deneme7
+{
+    display: block;
+}
+/* Kalp İkonu Stilleri */
+.product-img .rear-img i.fa-heart {
+    position: relative;
+    font-size: 20px;
+    color: black;
+    bottom:220px;
+    right: 15%;
+    opacity: 1;
+    transition: all .50s ease;
+  
+}
+
+
+.product-img .rear-img i.fa-heart:hover {
+    position: relative;
+    font-size: 20px;
+    color: rgb(104, 13, 13);
+    opacity: 1;
+    transform: scaleX(-1);
+     
+  
+}
+.slider-buttona {
+
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 1.5);
+    color: black;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 40%;
+
+    cursor: pointer;
+
+}
+
+.slider-buttona {
+    position: absolute;
+
+    /* Dikey düzlemde döndürme */
+
+
+
+    width: 50px;
+    height: 50px;
+    background-color: #f5f5f5;
+    color: black;
+
+    text-align: center;
+    line-height: 30px;
+    border-radius: 40%;
+
+    margin-top: -100px;
+    cursor: pointer;
+    align-items: center;
+
+}
+
+
+.leftb {
+    position: relative;
+    top: 10px;
+}
+
+.slider-buttona:hover {
+    background-color: #fb667a;
+    color: aliceblue;
+    /* rotate ikonları döndürmeye yarıyo*/
+
+}
+
+.slider-buttona:active {
+    background-color: #fb667a;
+    color: aliceblue;
+}
+
+.slider-buttona.left {
+    position: absolute;
+    left: 550px;
+}
+
+.slider-buttona.right {
+    right: 550px;
+
+
+}
+
+
+
+.slider-button {
+    position: relative;
+    top: 700px;
+    right: 1000px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(218, 62, 62);
+    text-align: center;
+    line-height: 30px;
+    border-radius: 40%;
+    cursor: pointer;
+
+}
+
+.slider-button.left {
+    width: 200px;
+    left: -1500px;
+}
+
+.slider-button.right {
+    left: -1400px;
+}
+
+.green {
+    background-color: #99d3ab;
+    width: 100%;
+    position: relative;
+    display: flex;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.emblem img {
+    width: 150px;
+    height: 150px;
+    padding-left: 30px;
+    filter: grayscale(100%) brightness(1.5);
+    margin-top: 50px;
+
+
+}
+
+.emblem img:hover {
+    filter: none;
+}
+
+.emblem {
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+}
+
+.sliderKonum {
+    position: relative;
+    width: 100%;
+    height: 300px;
+
+    overflow: hidden;
+
+}
+
+.slider1 {
+    display: flex;
+}
+
+.sliderKonum>.slider1 {
+    position: absolute;
+    left: 0;
+
+
+    height: 400px;
+}
+
+.slider-buttons {
+
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 1.5);
+    color: black;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 40%;
+    top: 100px;
+    cursor: pointer;
+
+}
+
+.slider-buttons {
+    position: absolute;
+
+    /* Dikey düzlemde döndürme */
+
+
+
+    width: 50px;
+    height: 50px;
+    background-color: #f5f5f5;
+    color: black;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 40%;
+    color: black;
+
+    cursor: pointer;
+    align-items: center;
+
+}
+
+.leftb {
+    position: relative;
+    top: 10px;
+}
+
+.slider-buttons:hover {
+    background-color: #fb667a;
+    color: aliceblue;
+    /* rotate ikonları döndürmeye yarıyo*/
+
+}
+
+.slider-buttons:active {
+    background-color: #fb667a;
+    color: aliceblue;
+}
+
+.slider-buttons.left {
+    position: absolute;
+    left: -90px;
+}
+
+.slider-buttons.right {
+    right: -90px;
+
+
+}
+
+.deneme {
+    background-color: #191919;
+    width: 100%;
+    color: white;
+    height: 125vh;
+    text-align: center;
+    margin-right: 0;
+    overflow: hidden;
+
+}
+
+
+
+.bloger {
+
+    padding-top: 60px;
+    display: inline-flex;
+    justify-content: center;
+    margin: 0%;
+    
+}
+
+.bloger a {
+    font-size:1rem;
+    color: #999;
+    
+    text-decoration: none;
+    padding-left: 20px;
+  
+
+}
+
+.bloger a:hover {
+    color: #ff9fac;
+
+}
+
+.transport {
+
+    border-left: 2px solid #999;
+
+    margin-left: 50px;
+}
+
+.transport1 {
+
+    margin-top: 50px;
+    width: 90%;
+    height: 450px;
+    border-top: 2px solid #999;
+    border-bottom: 0.5px solid #999;
+    margin-left: 70px;
+    color: #999;
+
+}
+
+
+
+.mail {
+    justify-content: center;
+    justify-items: center;
+    width: 350px;
+    border-radius: 20px;
+    height: 50px;
+    font-size: 1px;
+    padding-left: 30px;
+    margin-left: 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.btn2 {
+    background-color: #fb667a;
+    color: white;
+    width: 100px;
+    height: 46px;
+    border: 2px solid transparent;
+    border-radius: 19px;
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+    right: 110px;
+    font-size: 18px;
+}
+
+.text6 {
+    padding-top: 50px;
+}
+
+.title1 {
+    font-size: 1rem;
+    display: flex;
+    width: 950px;
+    text-align: left;
+    padding-top: 20px;
+
+
+
+}
+
+.title2:hover {
+    color: #fb667a;
+}
+
+.title3:hover {
+    color: #fb667a;
+}
+
+.title2 {
+    font-size: 15px;
+    display: flex;
+    width: 200px;
+    text-align: left;
+    font-weight: 100;
+    padding-top: 20px;
+}
+
+.title3 {
+    font-size: 1rem;
+    display: flex;
+    width: 200px;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.text7 {
+    width: 360px;
+    text-align: right;
+    padding-left: 140px;
+    font-size: 15px;
+}
+
+.text8 {
+    line-height: 40px;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 500px;
+    color: #fff;
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+.deneme1 {
+    position: relative;
+    left: 580px;
+    bottom: 300px;
+    font-size: 20px;
+    margin: 0%;
+
+
+}
+
+.texture {
+    position: relative;
+    bottom: 200px;
+    right: 10px;
+}
+
+.texture.logo {
+    position: absolute;
+    top: 200px;
+}
+
+.left_char {
+    display: block;
+    position: relative;
+    top: 90px;
+}
+
+.title {
+    position: relative;
+    right: 470px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+
+.PrestaShop {
+    padding-top: 20px;
+    font-size: large;
+}
+
+.payment {
+    padding-top: 20px;
+}
+
+.informative {
+    margin-top: 10px;
+    animation-name: slidein2;
+    animation-duration: 1s;
+    color: #999;
+}
+.scroll-to-top-button {
+    position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fb667a;
+  color: white;
+  border: none;
+  overflow: hidden;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+  border: 2px solid white;
+  height: 40px;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.scroll-to-top-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transition: left 0.5s;
+  z-index: -1;
+
+}
+.title button
+{
+    display: none;
+}
+.text8 button
+{
+     display: none;
+}
+
+.scroll-to-top-button:hover::before {
+  left: 0;
+}
+.scroll-to-top-button:hover {
+  color: #f0f0f0;
+}
+.scroll-to-top-button.show {
+  opacity: 1;
+}
+
+@keyframes slidein2 {
+    0% {
+        transform: translateX(-10px);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(10px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-10px);
+        opacity: 1;
+    }
+
+
+
+}
+
+@media screen and (max-width:600px) {
+    * {
+        margin: 0;
+        padding: 0;
+       
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .header .menu
+    {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 320px;
+        height: 100%;
+        background-color: white;
+        padding: 15px 30px 30px;
+        overflow-y: auto;
+        z-index: 1;
+        display: block;
+
+    }
+    .header .menu .head
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+}
+.header .menu .close-menu-btn
+{
+    height: 35px;
+    width: 35px;
+    position: relative;
+    display: inline-flex;
+align-items: center;
+background-color: transparent;
+cursor: pointer;
+border: none;
+
+}
+.header .menu .close-menu-btn::before,
+.header .menu .close-menu-btn::after
+{
+content: '';
+position: absolute;
+width: 80%;
+height: 2px;
+background-color: #e6e6e6;
+
+}
+.header .menu .close-menu-btn::before{
+    transform: rotate(45deg);
+}
+.header .menu .close-menu-btn::after
+{
+    transform: rotate(-45deg);
+
+}
+.header a{
+    color: black;
+}
+.header .menu > ul > li
+{
+    display: block;
+}
+.header .menu > ul > li:not(:last-child)
+{
+   margin-right: 0;
+}
+.header .menu li {
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.25);
+}
+.header .menu li:first-child {
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.25);
+}
+.header .menu > ul >li >a {
+padding: 12px 0;}
+.header .menu > ul > .nava1 > a {
+    padding-right: 34px;}
+
+
+
+    .deneme {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0;
+        margin: 0;
+        margin-top: 0;
+        padding: 0;
+    }
+  
+    .section1
+    {
+        width: 100%;
+    }
+    .text
+    {
+        position: relative;
+        right: 180px;
+        animation: none;
+        bottom: 400px;
+    }
+    .light-text1
+    {
+        position: relative;
+        right: 180px;
+        animation: none; 
+    }
+.buttons
+{
+    position: relative;
+    right: 180px;
+    bottom: 350px;
+    animation: none;
+}
+.text2
+{ position: relative;
+    right: 180px;
+    animation: none;
+    bottom: 400px;}
+.text3
+{position: relative;
+    right: 180px;
+    top: -400px;
+    animation: none; }
+
+
+.buttons1
+{
+    position: relative;
+    right: 180px;
+    bottom: 420px;
+    animation: none;   
+}
+.dalga2
+{
+    display: none;
+}
+.prev
+{
+    display: none;
+}
+.next
+{
+    display: none;
+}
+.yazi
+{
+margin-bottom: -20px;
+margin-top: 40px;
+}
+.main4 img
+{
+    width: 150px;
+}
+.main5 img
+{
+    width: 150px;
+}
+.main6 img
+{
+    width: 150px;
+}
+.main7 img
+{
+    width: 150px;
+}
+.main4
+{
+    margin-left: -10px;
+}
+.slider-buttonx.left
+{
+    left: 120px;
+}
+
+.fresh
+{
+    display: block;
+    margin-top: 200px;
+}
+.fresh2
+{
+    display: none;
+}
+.fresh1
+{
+    position: relative;
+    top: -300px;
+    left: 120px;
+    
+}
+.service1
+{
+    position: relative;
+    top: 150px;
+}
+.two
+{
+    display: block;
+}
+.two-one
+{
+    width: 200px;
+    position: relative;
+    right: 30px;
+    border-radius: 40px;
+}
+.two-one img
+{
+    width: 320px;
+    left: 100px;
+}
+.two-two img
+{
+    width: 330px;
+    left: 100px;
+}
+.sale p
+{
+    position: relative;
+    left: 10px;
+    top: 40px;
+    font-size: 30px;
+}
+.logo img
+{
+    width: 100px;
+}
+.sale .btn6
+{
+    left:-10px;
+    width: 150px;
+
+}
+
+.prev
+{
+    display: none;
+    color: transparent;
+    border: none;
+}
+.next
+{
+    display: none;
+}
+.icons2 i
+{
+   font-size: 13px;
+   margin-right: -10px;
+}
+.btn6
+{
+    position: relative;
+    left: 10px;
+    width: 100px;
+    top: 50px;
+}
+.two-two
+{
+    width: 200px;
+    position: relative;
+    right: 20px;
+    border-radius: 40px;
+    margin-top: -50px;
+}.sale1 p 
+{
+    position: relative;
+    right: 30px;
+    font-size: 30px;
+    top: 50px;
+}
+.service7
+{
+    margin-top: 100px;
+}
+button.btn1
+{
+    width: 100px;
+}
+.logo
+{
+    position: relative;
+    right: 25px;
+}
+.button1
+{
+    top: 50px;
+}
+.btn
+{
+    top: 70px;
+}
+.text
+{
+    bottom:480px;
+}
+.slider-buttonx
+{
+    position: relative;
+   bottom: 1px;
+   right: 100%;
+}
+ /* Ekran genişliği 480 pikselden küçükse */
+    .slider-container4 {
+     
+      display: block;
+      width: 100%;
+      /* Yalnızca iki slayt görüntülemek için genişliği yarıya düşür */
+    }
+
+  .color4 {
+  
+  left:35%;
+  top: 80%;
+}
+.icon3 {
+border: none;
+
+}
+
+.icon3 i {
+border: none;
+}
+
+.text12 {
+  position: relative;
+  left: 35%;
+  top: 10px;
+ line-height: 1px;
+ font-size: 17px;
+
+
+}
+
+
+.text13 {
+  width: 70%;
+  font-size: 15px;
+padding-top: 20px;
+padding-bottom: 40px;
+
+  position: relative;
+  top: 10px;
+  left: 60px;
+
+
+  
+}
+
+.border1 {
+ display: none;
+
+}
+  .slider4 {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    
+  }
+
+.fresh1 img
+{
+    margin-bottom: 200px;
+    margin-left: -90px;
+}
+
+  .slide4 {
+    width: 100%;
+    height: 100%;
+    
+  }
+  .dots4
+  {
+    display: none;
+  }
+  .demo1
+  {
+    display: grid;
+  }
+  
+    .demo1 {
+      flex-direction: column; /* Sütun düzeni */
+      align-items: center; /* Ortala */
+    }
+  
+    .image6 {
+      order: 1; /* İmajı sütunun üstüne taşı */
+      margin-bottom: 30px;
+      right: 120px; /* Alt boşluk ayarı */
+    }
+  
+    .demo4 {
+      margin-right: 0;
+
+    }
+    .demo4 .icon8
+    {
+        position: relative;
+        right: 300px;
+    }
+    .slideshow-container1
+    {
+        width: 100%;
+    }
+    
+    .demo4 .icon5
+    {
+        position: relative;
+        right: 300px;
+    }
+    .demo4 .icon6
+    {
+        position: relative;
+        right: 300px;
+    }
+    .icon5
+    {
+        width: 140px;
+    }
+    .icon6
+    {width: 140px;
+
+    }
+    .service1
+    {
+        margin-bottom: 200px;
+        align-items: center;
+    }
+    .icon8
+    {
+        width: 140px;
+    }
+    .demo4 .title7
+    {
+        position: relative;
+        left: 90px;
+        text-align: start;
+    }
+    .demo4 .text15
+    {
+        position: relative;
+        left: 90px;
+        text-align: start;
+    }
+  
+    .image6
+    {
+        width: 200px;
+        margin-bottom: 50px;
+        position: relative;
+        right: 30px;
+        z-index: 999;
+    }
+  .image6 img
+  {
+    width: 400px;
+    z-index: 0;
+  }
+    .icon3
+    {
+        display: none;
+    }
+.text12
+{
+    line-height: 30px;
+}
+.bloger
+{
+    display: none;
+}
+.left_char
+{
+    display: none;
+}
+.emblem
+{
+    width: calc(140%/2);
+    margin-bottom: -80px;
+}
+.slider-buttons.left{
+    left: -50px;
+    bottom: 90px;
+}
+
+.slider-buttons.right{
+    left: 280px;
+    
+}
+.slider1 img{
+    width: 100px;
+    height: 100px;
+}
+.slider-buttons.left
+{
+    width: 30px;
+    height: 30px;
+}
+.slider-buttons.left .leftb
+{
+    top: -1px;
+}
+.slider-buttons.right
+{
+    width: 30px;
+    height: 30px;
+}
+.slider-buttons.right .leftb
+{
+    top: -1px;
+}
+.deneme4
+{
+    width: 160px;
+    margin-left: -20px;
+    margin-right: 270px;
+    
+}
+.product.product-slide
+{
+    margin-right: 20px;
+    margin-left: 35px;
+}
+.pink .product.product-slide
+{
+    margin-left: 55px;
+}
+.image13
+{
+    display: none;
+}
+.image12
+{
+    display: none;
+}
+.image14
+{
+    display: none;
+}
+.pink
+{
+    height: 220vh;
+}
+.slider-buttona
+{
+    display: none;
+}
+button.slider-prev1
+{
+    left: 30px;
+}
+button.slider-next1
+{
+    right: 20px;
+}
+.text8
+{
+    right: 50px;
+}
+.image7
+{
+    display: none;
+}
+.image8
+{
+    display: none;
+}
+.image9
+{
+    display: none;
+}
+.image10
+{
+    display: none;
+}
+.scroll-to-top-button
+{
+    display: block;
+}
+.fresh-shop
+{
+    margin-left: 30px;
+}
+.slider-next
+{
+    position: relative;
+    right: 40px;
+}
+.slider-prev
+{
+    position: relative;
+    left: 20px;
+}
+.slider-next1
+{
+    position: relative;
+    right: 40px;
+}
+.slider-prev1
+{
+    position: relative;
+    left: 20px;
+}
+.texture
+{
+    margin-top: 100px;
+}
+.mail
+{
+    margin-left: -50px;
+    width: 80%;
+
+}
+.btn2
+{
+    position: relative;
+    left: 70px;
+    top: -70px;
+
+}
+.border
+{
+    display:  none;
+}
+.texture
+{
+    flex-direction: column; /* Sütun düzeni */
+    align-items: center;   
+}
+.deneme
+{
+    flex-direction: column;
+}
+.transport1
+{
+    display: block;
+    border: none;
+    align-items: center;
+}
+.left_char
+{
+    display: block;
+position: relative;
+top: 300px;}
+.title
+{
+    position: relative;
+   right: 40px; 
+   font-size: 20px;
+   display: inline-flex;
+}
+.title button{
+    display: block;
+    color: #999;
+    background-color: transparent;
+    border:none;
+    padding-left: 12px;
+    cursor: pointer;
+}
+.texture
+{
+   position: relative;
+   bottom: 150px;
+}
+.left_char
+{
+    position: relative;
+    bottom: 650px;
+}
+.left_char .title1,
+.title2,.title3
+{
+    display: none;
+}
+.text6
+{
+    padding: 1px;
+}
+.deneme1
+{
+position: relative;
+left: -180px;
+top: -70px;
+
+}
+
+.deneme1 .text7
+{
+    display: none;
+}
+.deneme1 .text8
+{
+    font-size: 20px;
+    color: #999;
+    display: inline-flex;
+    position: relative;
+    left: 250px;
+}
+.deneme1 .text8 button
+{
+   display: block;
+   color: #999;
+   background-color: transparent;
+   border:none;
+   padding-left: 12px;
+   cursor: pointer;
+
+}
+.text8 button:checked ~ .deneme1 .text7
+{
+    display: block;
+}
+
+.image5
+{
+   width: 100%;
+}
+.image6{
+    width: 10%;
+}
+  }
+  /* Ekran genişliği 768px'den küçükse (mobil cihazlar için) */
+@media (max-width: 768px) {
+    .menu-toggle {
+     
+        display: flex;
+      
+      }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .mobile-menu-active .navbar {
+        display: block;
+    }
+
+    .open-menu-btn,
+    .close-menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        color: #333;
+        padding: 10px 20px;
+    }
+
+    .close-menu-btn {
+        display: block;
+    }
+
+    .mobile-menu-active .open-menu-btn {
+        display: block;
+    }
+
+    .mobile-menu-active .close-menu-btn {
+        display: block;
+    }
+    button.btn
+    {
+        margin: 0;
+        padding: -100px;
+    }
+    .service7
+    {
+        overflow: hidden;
+        margin: 0;
+    }
+  .header .menu .menu-toggle
+  {
+    display: block;
+
+  }
+    .demo1
+    {
+        position: relative;
+        right: 50px;
+    }
+    .slideshow-container1
+    {
+        overflow-y: hidden;
+    }
+    .mySlides
+    {
+        overflow-y: hidden;
+    }
+.fresh-shop {
+    width: 80%;
+    display: inline-flex;
+    position: relative;
+    left: 45px;
+    margin-top: 200px;
+}
+ .product.product-slide1
+ {
+    margin-right: 30px;
+    margin-left: 40px;
+ }
+ .main-wrapper
+ {
+    min-height: 120vh;
+ }
+
+  /* Diğer stiller mobil için buraya eklenir */
+
+  .menu.active .navbar {
+    display: block; /* Menü açıldığında navbar'ı göster */
+  }
+  .header .menu
+  {
+    display: none;
+  }
+  .navbar
+  {
+    display: none;
+  }
+  
+}
